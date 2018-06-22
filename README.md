@@ -32,10 +32,10 @@ The last important point of configuration when running a container from this ima
 For example:
 
 ~~~
-docker run --name myNode -e LICENSE=accept -e NODENAME=MYNODE -P iibv10image -e MQ_QMGR_NAME=MQ1
+docker run --name myNode --env LICENSE=accept --env MQ_QMGR_NAME=QM1 -P mqimage
 ~~~
 
-This will run a container that creates and starts an Integration Node called `MYNODE` and exposes ports `4414` and `7800` on random ports on the host machine. It also creates a queue manager called `MQ1` and starts this queue manager with some default queues defined.
+This will run a container that creates and starts an MQ container and exposes ports `1414` and `9443` on random ports on the host machine. It also creates a queue manager called `MQ1` and starts this queue manager with some default queues defined.
 For more information on configuring MQ please see [README.md](https://github.com/ibm-messaging/mq-docker/blob/master/README.md) for the standalone MQ container.
 
 At this point you can use:
