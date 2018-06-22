@@ -73,7 +73,7 @@ RUN mkdir -p /tmp/mq \
 
 RUN chmod +x /usr/local/bin/*.sh
 
-COPY iib_manage.sh /usr/local/bin/
+COPY mq_manage.sh /usr/local/bin/
 RUN chmod +rx /usr/local/bin/*.sh && \
  chmod 666 /etc/hosts
 
