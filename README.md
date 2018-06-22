@@ -11,7 +11,7 @@ This repository contains a Dockerfile and some scripts which demonstrate a way i
 The image can be built using standard [Docker commands](https://docs.docker.com/userguide/dockerimages/) against the supplied Dockerfile.  For example:
 
 ~~~
-cd ICP
+cd MQICP
 docker build -t mqimage .
 ~~~
 
