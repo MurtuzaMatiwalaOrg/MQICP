@@ -11,8 +11,6 @@ set -e
 stop()
 {
 	echo "----------------------------------------"
-	echo "Stopping node $NODE_NAME..."
-	mqsistop $NODE_NAME
 	echo "Stopping Queue Manager $MQ_QMGR_NAME..."
 	endmqm $MQ_QMGR_NAME
 }
